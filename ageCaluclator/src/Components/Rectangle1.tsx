@@ -1,20 +1,28 @@
 import React from "react";
+import "./Rectangle1.css";
 
 const Rectangle1 = () => {
   return (
     <form action="">
       <div className="box">
         <label>DAY</label>
-        <input type="number" placeholder="00" />
+        <div className="input-container">
+          <input type="number" placeholder="00" />
+        </div>
       </div>
       <div className="box">
         <label>MONTH</label>
-        <input type="number" placeholder="00" />
+        <div className="input-container">
+          <input type="number" placeholder="00" />
+        </div>
       </div>
       <div className="box">
         <label>YEAR</label>
-        <input type="number" placeholder="00" />
+        <div className="input-container">
+          <input type="number" placeholder="00" />
+        </div>
       </div>
+      
     </form>
   );
 };
