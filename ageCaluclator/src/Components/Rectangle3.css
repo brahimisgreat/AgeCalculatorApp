@@ -1,0 +1,27 @@
+.rectangle3 {
+  display: flex;
+  width: 295px;
+  align-items: center;
+}
+
+.line {
+  height: 1px;
+  background: var(--Line, #DCDCDC);
+  width: 116px;
+}
+
+.arrow {
+  background-color: aqua;
+  width: 64px;
+  height: 64px;
+  border-radius: 216px;
+  background: var(--Purple, #854dff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-image {
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,32 @@
+.rec5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 295px;
+}
+
+.age {
+  width: 295px;
+  display: flex;
+  gap: 8px;
+}
+
+.age-number {
+  color: var(--Purple, #854dff);
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 110%; /* 61.6px */
+  letter-spacing: -1.12px;
+}
+
+.age-letters {
+  color: var(--Black, #151515);
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 110%; /* 61.6px */
+  letter-spacing: -1.12px;
+}
