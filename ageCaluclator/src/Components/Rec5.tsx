@@ -1,6 +1,14 @@
 import "./Rec5.css";
 
-export const Rec5 = ({years, months,days}) => {
+type Rec5Props = {
+  years: number;
+  months: number;
+  days: number;
+};
+
+
+
+export const Rec5: React.FC<Rec5Props> = ({years, months,days} ) => {
   return (
     <div className="rec5">
       <div className="age">
