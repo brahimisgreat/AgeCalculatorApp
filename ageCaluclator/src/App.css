@@ -9,13 +9,11 @@
 
 @media (min-width: 1220px) {
   .app {
-    background-color: blue;
   }
   .agecalculator {
     border-radius: 24px 24px 200px 24px;
     width: 840px;
     display: flex;
-    align-items: start;
   }
 
   form {
@@ -29,12 +27,73 @@
     width: 160px;
   }
 
-  .input-container {
+  .box .input-containerr {
     display: flex;
     width: 160px;
     padding: 12px 24px;
     align-items: center;
     gap: 16px;
-    border: solid 1px blue;
+    border-radius: 8px;
+  }
+
+  input {
+    color: var(--Black, #151515);
+    /* Heading M */
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+  }
+
+  .rectangle3 {
+    display: flex;
+    width: 728px;
+    align-items: center;
+  }
+
+  .line {
+    width: 316px;
+    height: 1px;
+    background: var(--Line, #dcdcdc);
+  }
+
+  .arrow {
+    order: 3;
+  }
+
+  .rec5 {
+    width: 728px;
+    height: 342px;
+  }
+
+  .age {
+    width: 100%;
+  }
+
+  .age-number {
+    color: var(--Purple, #854dff);
+    /* Heading L */
+    font-family: Poppins;
+    font-size: 104px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 110%; /* 114.4px */
+    letter-spacing: -2.08px;
+    width: 138px;
+    height: 114px;
+  }
+
+  .age-letters {
+    color: var(--Black, #151515);
+
+    /* Heading L */
+    font-family: Poppins;
+    font-size: 104px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 110%; /* 114.4px */
+    letter-spacing: -2.08px;
   }
 }
