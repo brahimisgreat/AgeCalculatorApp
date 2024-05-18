@@ -9,12 +9,12 @@ type Rectangle1Props = {
 };
 
 
-const Rectangle1:React.FC<Rectangle1Props> = ({ day, setDay, month, setMonth, year, setYear }) => {
+const Rectangle1:React.FC<Rectangle1Props> = ({errorInput,errorInputMonth, errorInputYear ,day, setDay, month, setMonth, year, setYear }) => {
   return (
     <form>
-      <div className="box">
+      <div className={"box"}>
         <label>DAY</label>
-        <div className="input-containerr">
+        <div className={!errorInput ?"input-containerr": 'errorBox'}>
           <input
             type="number"
             placeholder="DD"
@@ -30,7 +30,7 @@ const Rectangle1:React.FC<Rectangle1Props> = ({ day, setDay, month, setMonth, ye
       </div>
       <div className="box">
         <label>MONTH</label>
-        <div className="input-containerr">
+        <div className={!errorInputMonth ? 'input-containerr': 'errorBox'}>
           <input
             type="number"
             placeholder="MM"
@@ -45,7 +45,7 @@ const Rectangle1:React.FC<Rectangle1Props> = ({ day, setDay, month, setMonth, ye
       </div>
       <div className="box">
         <label>YEAR</label>
-        <div className="input-containerr">
+        <div className={!errorInputYear ? 'input-containerr': 'errorBox'}>
           <input
             type="number"
             placeholder="YYYY"

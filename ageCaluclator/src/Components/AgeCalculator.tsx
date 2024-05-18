@@ -13,12 +13,15 @@ export const AgeCalculator = () => {
   const [years, setYears] = useState<number>(0);
   const [months, setMonths] = useState<number>(0);
   const [days, setDays] = useState<number>(0);  
+  const [errorInput, setErrorInput] = useState<boolean>(false);
+  const [errorInputMonth, setErrorInputMonth] = useState<boolean>(false);
+  const [errorInputYear, setErrorInputYear] = useState<boolean>(false);
 
   return (
     <div className="agecalculator">
-      <Rectangle1 setDay={setDay} day={day}  month={month} setMonth={setMonth} year={year} setYear={setYear} />
-      <Rectangle3  setDay={setDay} day={day}  month={month} setMonth={setMonth} year={year} setYear={setYear} setYears={setYears} setMonths={setMonths} setDays={setDays} />
-      <Rec5  setDay={setDay} day={day}  month={month} setMonth={setMonth} year={year} setYear={setYear}  days={days} months={months} years={years}/>
+      <Rectangle1 errorInputYear={errorInputYear} setErrorInputYear={setErrorInputYear} setErrorInputMonth={setErrorInputMonth} errorInputMonth={errorInputMonth} errorInput={errorInput} setErrorInput={setErrorInput}  setDay={setDay} day={day}   month={month} setMonth={setMonth} year={year} setYear={setYear} />
+      <Rectangle3   errorInputYear={errorInputYear} setErrorInputYear={setErrorInputYear} setErrorInputMonth={setErrorInputMonth} errorInputMonth={errorInputMonth} errorInput={errorInput} setErrorInput={setErrorInput} setDay={setDay} day={day}  month={month} setMonth={setMonth} year={year} setYear={setYear} setYears={setYears} setMonths={setMonths} setDays={setDays} />
+      <Rec5   errorInputYear={errorInputYear} setErrorInputYear={setErrorInputYear} setErrorInputMonth={setErrorInputMonth} errorInputMonth={errorInputMonth} errorInput={errorInput} setErrorInput={setErrorInput} setDay={setDay} day={day}  month={month} setMonth={setMonth} year={year} setYear={setYear}  days={days} months={months} years={years}/>
     </div>
   );
 };
