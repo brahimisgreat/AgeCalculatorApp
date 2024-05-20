@@ -9,6 +9,7 @@ form {
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
+  width: 87.7px;
 }
 
 
@@ -33,7 +34,7 @@ form {
   gap: 16px;
   border-radius: 8px;
   border: 1px solid var(--Line, #dcdcdc);
-  width: 160px;
+  width: 87.7px;
   color: black;
 }
 
@@ -44,7 +45,7 @@ form {
   gap: 16px;
   border-radius: 8px;
   border: 1px solid var(--Line, #fa0808);
-  width: 160px;
+  width: 87.7px;
   color: black;
 }
 

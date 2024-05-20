@@ -1,7 +1,17 @@
 import arrow from "../assets/icon-arrow.svg";
 import "./Rectangle3.css";
 
-export const Rectangle3 = ({setErrorInput,setErrorInputMonth,setErrorInputYear,day, month, year, setYears,setMonths, setDays}) => {
+export const Rectangle3 = ({setErrorInput,setErrorInputMonth,setErrorInputYear,day, month, year, setYears,setMonths, setDays}: {
+  setErrorInput: (value: boolean) => void,
+  setErrorInputMonth: (value: boolean) => void,
+  setErrorInputYear: (value: boolean) => void,
+  day: number,
+  month: number,
+  year: number,
+  setYears: (value: number) => void,
+  setMonths: (value: number) => void,
+  setDays: (value: number) => void
+}) => {
 
  
 
@@ -9,7 +19,7 @@ export const Rectangle3 = ({setErrorInput,setErrorInputMonth,setErrorInputYear,d
   function getAge() {
     const dob = new Date(`${year} ${month} ${day}`);
     const today = new Date();
-    let age = today.getFullYear() - dob.getFullYear();
+    const age = today.getFullYear() - dob.getFullYear();
     const m = today.getMonth() - dob.getMonth();
     const d = today.getDate() - dob.getDate();
     if (day === 0 || day > 31) {

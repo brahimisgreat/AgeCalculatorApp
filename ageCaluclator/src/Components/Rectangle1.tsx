@@ -6,10 +6,13 @@ type Rectangle1Props = {
   setMonth: React.Dispatch<React.SetStateAction<number>>;
   year: number;
   setYear: React.Dispatch<React.SetStateAction<number>>;
+  errorInput: boolean;
+  errorInputMonth: boolean; // Add the missing property
+  errorInputYear: boolean; // Add the missing property
 };
 
 
-const Rectangle1:React.FC<Rectangle1Props> = ({errorInput,errorInputMonth, errorInputYear ,day, setDay, month, setMonth, year, setYear }) => {
+const Rectangle1:React.FC<Rectangle1Props> = ({errorInput, errorInputMonth ,errorInputYear ,day, setDay, month, setMonth, year, setYear }) => {
   return (
     <form>
       <div className={"box"}>

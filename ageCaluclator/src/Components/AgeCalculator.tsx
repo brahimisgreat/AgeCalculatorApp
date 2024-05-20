@@ -1,4 +1,3 @@
-import React from "react";
 import Rectangle1 from "./Rectangle1";
 import "./AgeCalculator.css";
 import { Rectangle3 } from "./Rectangle3";
@@ -19,9 +18,9 @@ export const AgeCalculator = () => {
 
   return (
     <div className="agecalculator">
-      <Rectangle1 errorInputYear={errorInputYear} setErrorInputYear={setErrorInputYear} setErrorInputMonth={setErrorInputMonth} errorInputMonth={errorInputMonth} errorInput={errorInput} setErrorInput={setErrorInput}  setDay={setDay} day={day}   month={month} setMonth={setMonth} year={year} setYear={setYear} />
-      <Rectangle3   errorInputYear={errorInputYear} setErrorInputYear={setErrorInputYear} setErrorInputMonth={setErrorInputMonth} errorInputMonth={errorInputMonth} errorInput={errorInput} setErrorInput={setErrorInput} setDay={setDay} day={day}  month={month} setMonth={setMonth} year={year} setYear={setYear} setYears={setYears} setMonths={setMonths} setDays={setDays} />
-      <Rec5   errorInputYear={errorInputYear} setErrorInputYear={setErrorInputYear} setErrorInputMonth={setErrorInputMonth} errorInputMonth={errorInputMonth} errorInput={errorInput} setErrorInput={setErrorInput} setDay={setDay} day={day}  month={month} setMonth={setMonth} year={year} setYear={setYear}  days={days} months={months} years={years}/>
+      <Rectangle1 errorInputYear={errorInputYear}   errorInputMonth={errorInputMonth} errorInput={errorInput}   setDay={setDay} day={day}   month={month} setMonth={setMonth} year={year} setYear={setYear} />
+      <Rectangle3   setErrorInputYear={setErrorInputYear} setErrorInputMonth={setErrorInputMonth}   setErrorInput={setErrorInput}  day={day}  month={month}  year={year}  setYears={setYears} setMonths={setMonths} setDays={setDays} />
+      <Rec5          days={days} months={months} years={years}  /> 
     </div>
   );
 };
